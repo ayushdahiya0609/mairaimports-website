@@ -937,7 +937,6 @@ img { max-width: 100%; display: block; }
 ════════════════════════════════════════ */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
-  .about-visual { height: 280px; }
   .contact-grid { grid-template-columns: 1fr; gap: 48px; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 36px; }
   .locations-grid { grid-template-columns: 1fr; max-width: 480px; }
