@@ -3,157 +3,511 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon | Maira Imports Pty Ltd</title>
+  <meta name="description" content="Maira Imports Pty Ltd — Leading importer, wholesaler and distributor of Indian groceries, kitchenware, dry fruits, festival products and cultural goods across Australia." />
+  <meta name="keywords" content="Indian groceries wholesale Australia, Indian kitchenware supplier, dry fruits importer Australia, Indian festival products, wooden temples Australia, Maira Imports" />
+  <meta property="og:title" content="Maira Imports Pty Ltd | Indian Groceries & Cultural Products" />
+  <meta property="og:description" content="Australia's trusted wholesale importer of Indian groceries, kitchenware, accessories, dry fruits, festival products and decor." />
+  <meta property="og:type" content="website" />
+  <title>Maira Imports Pty Ltd | Indian Groceries & Cultural Products Wholesale</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0d1b3e;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-      overflow: hidden;
-    }
-
-    /* Background shapes */
-    body::before {
-      content: '';
-      position: fixed;
-      top: -200px; right: -200px;
-      width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(201,162,39,.12) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    body::after {
-      content: '';
-      position: fixed;
-      bottom: -200px; left: -200px;
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(201,162,39,.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .logo {
-      margin-bottom: 48px;
-    }
-    .logo-main {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #c9a227;
-      display: block;
-      letter-spacing: .02em;
-    }
-    .logo-sub {
-      font-size: .65rem;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.4);
-      display: block;
-      margin-top: 4px;
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: #c9a227;
-      background: rgba(201,162,39,.1);
-      border: 1px solid rgba(201,162,39,.3);
-      padding: 5px 16px;
-      border-radius: 100px;
-      margin-bottom: 28px;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 20px;
-      color: #fff;
-    }
-    h1 span { color: #c9a227; }
-
-    p {
-      font-size: clamp(.95rem, 2vw, 1.1rem);
-      color: rgba(255,255,255,.6);
-      max-width: 500px;
-      line-height: 1.75;
-      margin-bottom: 48px;
-    }
-
-    .contact-strip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 56px;
-    }
-    .contact-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: .9rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all .25s ease;
-    }
-    .btn-wa {
-      background: #25d366;
-      color: #fff;
-    }
-    .btn-wa:hover { background: #1ebe5d; transform: translateY(-2px); }
-    .btn-call {
-      background: rgba(255,255,255,.08);
-      color: #fff;
-      border: 1px solid rgba(255,255,255,.2);
-    }
-    .btn-call:hover { background: rgba(255,255,255,.14); transform: translateY(-2px); }
-
-    .divider {
-      width: 60px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #c9a227, transparent);
-      margin: 0 auto 32px;
-    }
-
-    .footer-note {
-      font-size: .78rem;
-      color: rgba(255,255,255,.25);
-      letter-spacing: .04em;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="logo">
-    <span class="logo-main">Maira Imports</span>
-    <span class="logo-sub">Pty Ltd</span>
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <span class="logo-main">Maira Imports</span>
+        <span class="logo-sub">Pty Ltd</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-contact">
+        <a href="tel:+614777352526" class="header-phone">📞 +61 477 735 2526</a>
+        <a href="https://wa.me/614777352526" target="_blank" rel="noopener noreferrer" class="header-wa">💬 WhatsApp</a>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">🇦🇺 Australian Registered Wholesale Importer</div>
+      <h1>Your Trusted Source for<br /><span class="gold">Indian Groceries &amp;</span><br />Cultural Products</h1>
+      <p class="hero-sub">Maira Imports Pty Ltd supplies retailers, restaurants and businesses across Australia with premium Indian groceries, kitchenware, accessories, dry fruits, festival products and more — directly imported for the best value.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-gold">Explore Our Range</a>
+        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>20+</strong>
+          <span>Product Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>1000+</strong>
+          <span>Items Available</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>Direct</strong>
+          <span>Importer from India</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>VIC</strong>
+          <span>Warehouse Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ MARQUEE STRIP ═══════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🌿 Indian Groceries</span>
+      <span>🍳 Kitchenware &amp; Utensils</span>
+      <span>🔪 Cutlery</span>
+      <span>🛕 Wooden Temples</span>
+      <span>💍 Men &amp; Women Accessories</span>
+      <span>🌰 Dry Fruits &amp; Nuts</span>
+      <span>🪔 Festival Products</span>
+      <span>🏮 Decor &amp; Home</span>
+      <span>🌿 Indian Groceries</span>
+      <span>🍳 Kitchenware &amp; Utensils</span>
+      <span>🔪 Cutlery</span>
+      <span>🛕 Wooden Temples</span>
+      <span>💍 Men &amp; Women Accessories</span>
+      <span>🌰 Dry Fruits &amp; Nuts</span>
+      <span>🪔 Festival Products</span>
+      <span>🏮 Decor &amp; Home</span>
+    </div>
   </div>
 
-  <div class="badge">We're almost there</div>
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="process-card">
+          <div class="process-label">How We Work</div>
+          <div class="process-steps">
 
-  <h1>Something <span>exciting</span><br />is coming soon</h1>
+            <div class="process-step">
+              <div class="ps-left">
+                <div class="ps-num">01</div>
+                <div class="ps-line"></div>
+              </div>
+              <div class="ps-body">
+                <div class="ps-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path d="M21 10V6a2 2 0 00-2-2H5a2 2 0 00-2 2v4m18 0H3m18 0l-2 10H5L3 10"/></svg>
+                </div>
+                <div class="ps-content">
+                  <h4>Direct Import</h4>
+                  <p>Sourced directly from manufacturers in India — authentic products, no middlemen, better pricing.</p>
+                </div>
+              </div>
+            </div>
 
-  <p>We're putting the finishing touches on our website. Maira Imports — Australia's trusted wholesale importer of Indian groceries and cultural products — will be back shortly.</p>
+            <div class="process-step">
+              <div class="ps-left">
+                <div class="ps-num">02</div>
+                <div class="ps-line"></div>
+              </div>
+              <div class="ps-body">
+                <div class="ps-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                </div>
+                <div class="ps-content">
+                  <h4>Warehouse &amp; Stock</h4>
+                  <p>Held at our Ravenhall, VIC distribution centre — ready stock available for quick fulfilment.</p>
+                </div>
+              </div>
+            </div>
 
-  <div class="divider"></div>
+            <div class="process-step last">
+              <div class="ps-left">
+                <div class="ps-num">03</div>
+              </div>
+              <div class="ps-body">
+                <div class="ps-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div class="ps-content">
+                  <h4>Distribute Australia-Wide</h4>
+                  <p>Delivered to retailers, restaurants, and businesses across all of Australia.</p>
+                </div>
+              </div>
+            </div>
 
-  
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">About Us</span>
+        <h2>Australia's Dedicated Indian Goods Importer &amp; Wholesaler</h2>
+        <p>Maira Imports Pty Ltd is a registered Australian company specialising in the import, wholesale and distribution of authentic Indian groceries and cultural products. We bridge the gap between Indian manufacturers and Australian businesses, delivering quality at competitive wholesale prices.</p>
+        <p>Whether you're a retailer stocking Indian products, a restaurant sourcing ingredients, or a business looking for cultural and festival merchandise — Maira Imports is your end-to-end supply partner.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">📦</div>
+            <div>
+              <strong>Importer</strong>
+              <span>Direct from India — no middlemen</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🏪</div>
+            <div>
+              <strong>Wholesaler</strong>
+              <span>Trade pricing for businesses</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🚚</div>
+            <div>
+              <strong>Distributor</strong>
+              <span>Warehouse in Ravenhall, VIC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ═══════════════════════════ PRODUCTS ═══════════════════════════ -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Supply</span>
+        <h2>Our Product Categories</h2>
+        <p>We import and distribute a wide range of authentic Indian products — from everyday groceries to cultural and festival essentials.</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#1a2f5a,#243b6d)">🌿</div>
+          <h3>Indian Groceries</h3>
+          <p>Authentic spices, lentils, rice, flours, pickles, chutneys, cooking pastes and everyday pantry essentials sourced directly from India.</p>
+          <div class="product-tags">
+            <span>Spices</span><span>Lentils &amp; Dal</span><span>Rice &amp; Flour</span><span>Pickles</span>
+          </div>
+        </div>
+
+        <div class="product-card featured">
+          <div class="product-badge">Popular</div>
+          <div class="product-icon" style="background:linear-gradient(135deg,#c9a227,#e8c84a)">🍳</div>
+          <h3>Kitchenware &amp; Utensils</h3>
+          <p>Traditional and modern Indian kitchen tools — kadais, tawas, pressure cookers, steel cookware, rolling pins, and specialty cooking equipment.</p>
+          <div class="product-tags">
+            <span>Kadai &amp; Tawa</span><span>Steel Cookware</span><span>Specialty Tools</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#0d1b3e,#1a2f5a)">🔪</div>
+          <h3>Cutlery</h3>
+          <p>Quality stainless steel and traditional cutlery sets — from everyday thali sets to elegant serving spoons and ceremonial pieces.</p>
+          <div class="product-tags">
+            <span>Thali Sets</span><span>Serving Spoons</span><span>Stainless Steel</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#7b4f1e,#c47d35)">🛕</div>
+          <h3>Wooden Temples</h3>
+          <p>Handcrafted wooden puja mandirs and home temples in various styles and sizes — ideal for households and gifting.</p>
+          <div class="product-tags">
+            <span>Puja Mandirs</span><span>Handcrafted</span><span>Various Sizes</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#6b3fa0,#9b6fd0)">💍</div>
+          <h3>Men &amp; Women Accessories</h3>
+          <p>Traditional jewellery, bangles, bindis, hair accessories, and fashion items for men and women celebrating Indian culture.</p>
+          <div class="product-tags">
+            <span>Bangles</span><span>Bindis</span><span>Hair Accessories</span><span>Jewellery</span>
+          </div>
+        </div>
+
+        <div class="product-card featured">
+          <div class="product-badge">Popular</div>
+          <div class="product-icon" style="background:linear-gradient(135deg,#c9a227,#e8c84a)">🌰</div>
+          <h3>Dry Fruits &amp; Nuts</h3>
+          <p>Premium quality cashews, almonds, pistachios, raisins, dates, and mixed dry fruit assortments — great for retail and gifting.</p>
+          <div class="product-tags">
+            <span>Cashews</span><span>Almonds</span><span>Pistachios</span><span>Mixed Nuts</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#b5451b,#e07043)">🪔</div>
+          <h3>Festival Products</h3>
+          <p>Diyas, rangoli colours, pooja supplies, incense, and seasonal festival merchandise for Diwali, Holi, Navratri and more.</p>
+          <div class="product-tags">
+            <span>Diyas &amp; Candles</span><span>Rangoli</span><span>Incense</span><span>Pooja Items</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#1a5a4a,#2d8a6e)">🏮</div>
+          <h3>Decor &amp; Home</h3>
+          <p>Indian-inspired home decor — brass figurines, wall art, cushion covers, tapestries, and decorative pieces to style any space.</p>
+          <div class="product-tags">
+            <span>Brass Figurines</span><span>Wall Art</span><span>Cushion Covers</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="products-cta">
+        <p>Looking for something specific or want a full product catalogue?</p>
+        <a href="#contact" class="btn btn-navy">Request Catalogue</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ WHY US ═══════════════════════════ -->
+  <section id="why-us" class="section why-section">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-label light">Why Choose Us</span>
+        <h2>The Maira Imports Advantage</h2>
+        <p>We make sourcing Indian products simple, reliable and cost-effective for Australian businesses.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🎯</div>
+          <h3>Direct Importer</h3>
+          <p>We source directly from manufacturers in India — cutting out the middlemen to give you better pricing and fresher stock.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>Quality Assured</h3>
+          <p>Every product meets Australian import standards. We stand behind the quality of everything we supply.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🚚</div>
+          <h3>VIC Warehouse Ready</h3>
+          <p>Our Ravenhall warehouse holds stock ready for quick fulfilment. No long lead times waiting for shipping.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💼</div>
+          <h3>Wholesale Pricing</h3>
+          <p>Competitive trade pricing for retailers, restaurants, event businesses and community organisations.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>Reliable Partnership</h3>
+          <p>We build long-term relationships with our clients. Count on us for consistent supply and dedicated support.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌏</div>
+          <h3>Nationwide Distribution</h3>
+          <p>Registered in Victoria with distribution capability to businesses across all of Australia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ LOCATIONS ═══════════════════════════ -->
+  <section id="locations" class="section locations-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Find Us</span>
+        <h2>Our Locations</h2>
+        <p>We operate from two Victorian locations — our registered office in Alfredton and our distribution warehouse in Ravenhall.</p>
+      </div>
+      <div class="locations-grid">
+        <div class="location-card">
+          <div class="location-icon">🏢</div>
+          <div class="location-type">Registered Office</div>
+          <h3>Alfredton, VIC</h3>
+          <address>
+            70B Vale Street<br />
+            Alfredton, Victoria 3350<br />
+            Australia
+          </address>
+          <a href="https://maps.google.com/?q=70B+Vale+Street+Alfredton+VIC+3350" target="_blank" rel="noopener noreferrer" class="location-link">Open in Google Maps →</a>
+        </div>
+        <div class="location-card featured-location">
+          <div class="location-icon">🏭</div>
+          <div class="location-type">Distribution Warehouse</div>
+          <h3>Ravenhall, VIC</h3>
+          <address>
+            109 Eucumbene Drive<br />
+            Ravenhall, Victoria 3023<br />
+            Australia
+          </address>
+          <a href="https://maps.google.com/?q=109+Eucumbene+Drive+Ravenhall+VIC+3023" target="_blank" rel="noopener noreferrer" class="location-link">Open in Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-label light">Get In Touch</span>
+        <h2>Ready to Stock Indian Products?</h2>
+        <p>Send us your enquiry and our team will get back to you with pricing, availability and wholesale terms.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <strong>Warehouse</strong>
+            <span>109 Eucumbene Dr, Ravenhall VIC 3023</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div>
+            <strong>Phone / WhatsApp</strong>
+            <a href="tel:+614777352526" style="color:rgba(255,255,255,.65);display:block;">+61 477 735 2526</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🌐</div>
+          <div>
+            <strong>Website</strong>
+            <span>www.mairaimports.com.au</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📦</div>
+          <div>
+            <strong>Trade Enquiries</strong>
+            <span>Wholesale &amp; bulk orders welcome</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="business">Business Name</label>
+              <input type="text" id="business" name="business" placeholder="Your business" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@business.com.au" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+61 4XX XXX XXX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="category">Product Category Interested In</label>
+            <select id="category" name="category">
+              <option value="">Select a category</option>
+              <option>Indian Groceries</option>
+              <option>Kitchenware &amp; Utensils</option>
+              <option>Cutlery</option>
+              <option>Wooden Temples</option>
+              <option>Men &amp; Women Accessories</option>
+              <option>Dry Fruits &amp; Nuts</option>
+              <option>Festival Products</option>
+              <option>Decor &amp; Home</option>
+              <option>Multiple Categories</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements — quantities, delivery location, any specific products..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-full">Send Enquiry</button>
+          <div id="formMsg" class="form-msg" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-main">Maira Imports</span>
+        <span class="logo-sub">Pty Ltd</span>
+        <p>Australia's trusted wholesale importer and distributor of Indian groceries and cultural products.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-categories">
+        <h4>Categories</h4>
+        <ul>
+          <li>Indian Groceries</li>
+          <li>Kitchenware &amp; Utensils</li>
+          <li>Cutlery</li>
+          <li>Wooden Temples</li>
+          <li>Accessories</li>
+          <li>Dry Fruits</li>
+          <li>Festival Products</li>
+          <li>Decor &amp; Home</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Our Locations</h4>
+        <p>📍 70B Vale Street<br />Alfredton VIC 3350</p>
+        <p>🏭 109 Eucumbene Drive<br />Ravenhall VIC 3023</p>
+        <p>🌐 www.mairaimports.com.au</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Maira Imports Pty Ltd. All rights reserved. | Registered in Victoria, Australia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp & Call floating buttons -->
+  <div class="float-actions">
+    <a href="https://wa.me/614777352526" target="_blank" rel="noopener noreferrer" class="float-btn float-wa" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="tel:+614777352526" class="float-btn float-call" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+  </div>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
 </body>
 </html>
